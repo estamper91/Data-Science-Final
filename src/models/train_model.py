@@ -15,6 +15,8 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.neighbors import KNeighborsClassifier
 
 #Helper Functions
+import sys
+sys.path.append('/path/to/Data-Science-Final/utils')
 from helper_functions import metric_calc
 
 #loading whole dataset
