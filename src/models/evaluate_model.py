@@ -18,7 +18,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 #Helper Functions
 import sys
-sys.path.append('/path/to/Data-Science-Final/utils')
+sys.path.append('/Data-Science-Final/utils')
 from helper_functions import metric_calc
 
 np.random.seed(470)
