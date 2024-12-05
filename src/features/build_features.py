@@ -3,7 +3,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-mushrooms = pd.read_csv('/Data-Science-Final/data/preprocessed/mushrooms_cleaned.csv')
+mushrooms = pd.read_csv('data/preprocessed/mushrooms_cleaned.csv')
 print(mushrooms.head())
 
 
