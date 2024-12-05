@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # import data
 
-mushrooms_raw = pd.read_csv('/Data-Science-Final/data/raw/secondary_data.csv',sep=';')
+mushrooms_raw = pd.read_csv('data/raw/secondary_data.csv',sep=';')
 print(mushrooms_raw)
 
 print(mushrooms_raw.isna().sum())
@@ -15,4 +15,4 @@ print(mushrooms_raw.isna().sum())
 variables = ['class', 'cap-diameter', 'cap-shape', 'cap-color', 'does-bruise-or-bleed', 'gill-color', 'stem-height', 'stem-width', 'stem-color', 'has-ring', 'habitat', 'season']
 mushrooms_nona = mushrooms_raw[variables]
 print(mushrooms_nona.isna().sum())
-mushrooms.to_csv('Data-Science-Final/data/raw/mushrooms.csv', index=False)
+mushrooms.to_csv('data/raw/mushrooms.csv', index=False)
