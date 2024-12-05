@@ -1,13 +1,8 @@
-import sys
-sys.path.append('/Data-Science-Final/utils')
-from helper_functions import metric_calc
-sys.path.append('/Data-Science-Finals/src/data')
-import load_data
-import preprocess
-sys.path.append('/Data-Science-Finals/src/features')
-import build_features
-sys.path.append('/Data-Science-Finals/src/visualization')
-import visualize
-sys.path.append('/Data-Science-Finals/src/models')
-import train_model
-import evaluate_model
+from data.raw import *
+from data.preprocessed import *
+from src.data import data_cleaning
+from src.features import build_features
+from src.utils import helper_functions
+from src.visualization import visualizations
+from src.models import train_model
+from src.models import evaluate_model
