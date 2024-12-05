@@ -15,12 +15,10 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.neighbors import KNeighborsClassifier
 
 #Helper Functions
-import sys
-sys.path.append('/Data-Science-Final/utils')
-from helper_functions import metric_calc
+from src.utils.helper_functions import metric_calc
 
 #loading whole dataset
-mushrooms = pd.read_csv('/Data-Science-Final/data/preprocessed/mushrooms_cleaned.csv')
+mushrooms = pd.read_csv('data/preprocessed/mushrooms_cleaned.csv')
 mushrooms = mushrooms.drop(['bruise_bleed','has_ring'],axis=1)
 
 print(mushrooms.head())
@@ -46,8 +44,8 @@ print("X_train",X_train.shape)
 X_raw = pd.DataFrame(X_raw)
 y_raw = pd.DataFrame(y_raw)
 
-X_raw.to_csv('/Data-Science-Final/data/preprocessed/X_raw.csv',index=False)
-y_raw.to_csv('/Data-Science-Final/data/preprocessed/y_raw.csv',index=False)
+X_raw.to_csv('X_raw.csv',index=False)
+y_raw.to_csv('y_raw.csv',index=False)
 
 #Decision Tree
 #Train the model
