@@ -3,10 +3,9 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-mushrooms_nona = pd.read_csv('/Data-Science-Final/data/raw/mushrooms.csv')
+mushrooms_nona = pd.read_csv('data/raw/mushrooms.csv')
 
 ## Replacing values 
-
 
 col_dict = {'n':'brown', 'b':'buff', 'g':'gray', 'r':'green', 'p':'pink', 'k':'black', 'o':'orange', 'u':'purple', 'e':'red', 'w':'white', 'y':'yellow', 'l':'blue', 'f':'none'}
 
@@ -29,10 +28,10 @@ print(mushrooms.head())
 print(mushrooms.columns)
 
 #saving the cleaned data
-mushrooms.to_csv('Data-Science-Final/data/preprocessed/mushrooms_cleaned.csv', index=False)
+mushrooms.to_csv('data/preprocessed/mushrooms_cleaned.csv', index=False)
 
 #checking the data
-mC = pd.read_csv('mushrooms_cleaned.csv')
+mC = pd.read_csv('data/preprocessed/mushrooms_cleaned.csv')
 print(mC.head())
 #testing adjusted keys
 print(mC['stem_color'].unique())
