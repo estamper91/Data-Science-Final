@@ -17,15 +17,13 @@ from sklearn.metrics import ConfusionMatrixDisplay
 from sklearn.neighbors import KNeighborsClassifier
 
 #Helper Functions
-import sys
-sys.path.append('/Data-Science-Final/utils')
-from helper_functions import metric_calc
+from src.utils.helper_functions import metric_calc
 
 np.random.seed(470)
 
 #importing necessary variables/functions
-X_raw = pd.read_csv("/Data-Science-Final/data/preprocessed/X_raw.csv")
-y_raw = pd.read_csv("/Data-Science-Final/data/preprocessed/y_raw.csv")
+X_raw = pd.read_csv("data/preprocessed/X_raw.csv")
+y_raw = pd.read_csv("data/preprocessed/y_raw.csv")
 y_raw = np.ravel(y_raw)
 print(X_raw.shape,y_raw.shape)
 
